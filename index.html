@@ -12,6 +12,9 @@
     <!-- google libs -->
     <link href="https://fonts.googleapis.com/css?family=Acme|Exo+2|Teko&display=swap" rel="stylesheet">
 
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/4dff4a55ad.js"></script>
+
     <!-- scroll reveal libs -->
     <script src="https://unpkg.com/scrollreveal"></script>
     
@@ -23,9 +26,17 @@
         <!-- div | header-grid -->
         <div class="header-grid">
             <!-- header elements | grid elements -->
+            
+            <!-- small header panel [branding] -->
+            <div class="header-panel panel-wide">
+                <!-- ryzen branding logo -->
+                <div class="top-logo"></div>
+                <!-- ryzen branding logo -->
+            </div>
+            <!-- small header panel [branding] end -->
 
             <!-- large header panel [slideshow] -->
-            <div class="header-panel panel-lrg">
+            <div class="header-panel panel-lrg panel-switch">
 
                 <div class="slideshow">
                     <!-- slideshow elements -->
@@ -47,14 +58,26 @@
             <!-- large header panel [slideshow] end -->
 
             <!-- header panel wide [navigation] -->
-            <div class="header-panel panel-wide panel-switch">
+            <div class="header-panel panel-wide">
                 <!-- nav | nav -->
                 <nav class="nav">
                     <!-- a | navlinks -->
-                    <a href="index.html" class="active">Homepage</a>
-                    <a href="#hardware" class="navlinks">Hardware</a>
-                    <a href="#software" class="navlinks">Software</a>
-                    <a href="#gaming" class="navlinks">Gaming</a>
+                    <a href="index.html" class="navlinks">
+                        <i class="fas fa-home"></i>
+                        Homepage
+                    </a>
+                    <a href="#hardware" class="navlinks">
+                        <i class="fas fa-laptop-code"></i>
+                        Hardware
+                    </a>
+                    <a href="#software" class="navlinks">
+                        <i class="fas fa-hdd"></i>
+                        Software
+                    </a>
+                    <a href="#gaming" class="navlinks">
+                        <i class="fas fa-headset"></i>
+                        Gaming
+                    </a>
                     <!-- a | navlinks end -->
                 </nav>
                 
@@ -64,27 +87,18 @@
 
             <!-- main heading | branding -->
             <div class="header-panel header-hidden panel-med">
-                    <!-- <h1>AMD</h1>
-                    <h2>Advanced Micro Devices &copy;</h2> -->
                     <div class="company-logo"></div>
                 </div>
                 <!-- main heading | branding -->
 
-            <!-- small header panel [branding] -->
-            <div class="header-panel panel-med">
-                <div class="top-logo"></div>
-            </div>
-            <!-- small header panel [branding] end -->
+            
 
             <!-- hidden panel elements -->
-            <div class="header-panel header-hidden">
-                <div class="product-box product-pre">
-                    <h3>New Series Pre Order</h3>
-                    <p>$599</p>
-                </div>
-            </div>
+            <div class="header-panel header-hidden"></div>
+
             <div class="header-panel panel-med header-hidden">
                 <!-- subscription button -->
+                <div class="header-banner"></div>
                 <button class="subscribe">
                     <h3>Subscribe</h3>
                     <!-- attach js application for pop up delivery to user -->
@@ -92,13 +106,7 @@
                 <!-- subscription button end -->
             </div>
             
-            <div class="header-panel header-hidden">
-                    <!-- product placement for desktop -->
-                    <div class="product-box product-gpu">
-                        <h3>First Round Bonus</h3>
-                        <p>$399</p>
-                    </div>
-                </div>
+            <div class="header-panel header-hidden"></div>
     
                 
                 <!-- hidden panel elements -->
@@ -319,6 +327,7 @@
         </div>
         <!-- info_grid end -->
         <hr>
+        <div class="diagrams"></div>
         <!-- google content elements -->
         <div class="google_elements">
             <!-- google | js emulated pie charts -->
