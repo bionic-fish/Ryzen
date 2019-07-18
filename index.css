@@ -18,43 +18,31 @@
     font-family: 'Exo 2', sans-serif;
     color: #fff;
 }
-img {vertical-align: middle;}
+    /* global properties  */
 .flex {display: flex;}
+.hidden {display: none;}
+img {vertical-align: middle;}
 
-/* headings font */
-/* h1, h2, h3, h4, h5, h6 {color: #000;} */
-.hidden {
-    display: none;
-}
-/* Header & Banner Elements */
+
+
+/* Header Elements */
+/* Header Elements */
     /* header | header properties */
 .header {
-    /* background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* width: 100%; */
     background-color: #000;
-    /* background-image: url(assets/banners/header.png); */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    
 }
 .header-grid {
-    /* margin: 10px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(200px, auto);
-    /* grid-gap: 10px; */
-    /* filter: grayscale(); */
-
 }
 .header-panel {
     display: flex;
     /* border: 1px solid #fff; */
     flex-direction: column;
     /* margin: 12px auto; */
-    width: auto;
+    /* width: auto; */
     
 }
 .header-panel h1,
@@ -65,11 +53,16 @@ img {vertical-align: middle;}
     font-family: 'Exo 2', sans-serif;
 }
 .panel-lrg {
+    margin: auto;
+    grid-column: span 4;
+    grid-row: span 1;
+}
+.panel-med {
     grid-column: span 2;
-    grid-row: span 2;
 }
 .panel-wide {
-    grid-column: span 2;
+    margin: auto;
+    grid-column: span 4;
 }
 .panel-hidden {
     display: none;
@@ -115,6 +108,8 @@ img {vertical-align: middle;}
 
     /* slideshow elements end */
 
+   
+
     /* header | header end */
     
 /* Banner Elements */
@@ -152,49 +147,31 @@ img {vertical-align: middle;}
     
 }
 
-/* Navigation Elements */
-    /* nav | nav properties */
-/* .nav {
-    height: 180px;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    background-color: #000;
+.top-logo {background-image: url(assets/img/top-logo.jfif);}
+.company-logo {background-image: url(assets/img/amd.png);}
 
-}
-.nav a {
-   margin: 0 auto;
-   align-content: center;
-   align-items: center;
-    text-align: center;
-    border: 2px solid orangered;
-   text-decoration: none;
-   
-} */
-
-
-.nav-layout {
-    
-    display: flex;
-    flex-direction: column;
-
-}
-.nav-layout a {
-    margin: auto;
-    padding: 12px;
-}
-
-.top-logo {
-    height: 180px;
+.top-logo,
+.company-logo {
+    height: 190px;
     width: 250px;
-    background-attachment: local;
+    margin: auto;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 12% auto;
-    background-image: url(assets/img/top-logo.jfif);
+    /* margin: 12% auto; */
+    
 }
-
+.header-panel h2 {
+    font-size: 15px;
+    padding: 2px;
+}
+.header-panel h1 {
+    color: rgb(230, 41, 8);
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 0px;
+    
+}
 
 
 
@@ -210,9 +187,6 @@ img {vertical-align: middle;}
     background:
         linear-gradient(to top right,black,transparent),
         linear-gradient(to top left, grey, transparent);
-
-
-    
     letter-spacing: 2px;
 }
 .content h2,
@@ -222,19 +196,9 @@ img {vertical-align: middle;}
     padding: 20px;
 }
 
-/* product image */
-.gaming01,
-.gaming02 {
-    height: 350px;
-    width: 200px;
-    background-attachment: local;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* margin: 12% auto; */
-}
 
 .chart,
+.company,
 .product,
 .hardware,
 .overview,
@@ -249,18 +213,14 @@ img {vertical-align: middle;}
     margin: 12% auto;
 
 }
-.chart {background-image: url(assets/img/chart.png);}
+
 .product {background-image: url(assets/img/product.png);}
 .hardware {background-image: url(assets/img/hardware.png);}
 .history {background-image: url(assets/img/history.jpg);}
 .branding {background-image: url(assets/img/branding.png);}
-
-.gaming01 {background-image: url(assets/img/gaming01.png);}
-.gaming02 {background-image: url(assets/img/gaming02.png);}
-
 .specifcations {background-image: url(assets/img/apartspecs.png);}
 
-
+.company {background-image: url(assets/img/AMD.png);}
 
 /* JS | Google Elements */
     /* google_elements */
@@ -273,7 +233,7 @@ img {vertical-align: middle;}
     margin: auto;
 }
 
-/* gaming elements */
+
 
 /* Footer Elements */
     /* footer | footer properties */
@@ -346,19 +306,72 @@ img {vertical-align: middle;}
     text-transform: uppercase;
     color: #000;
 }
+
 /* media queries */
 /* media queries */
 
 /* DESKTOP | LAPTOP SCREEN WIDTH : over 860px */
 /* DESKTOP | LAPTOP SCREEN WIDTH : over 860px */
-/* @media only screen and (min-width: 860px) {
+@media only screen and (min-width: 860px) {
     .slideshow
     .slides {
         margin: auto;
         align-content: center;
         align-items: center;
     }
-} */
+    /* Navigation Elements */
+    .nav {
+        display: flex;
+    }
+    .nav a {
+        margin: auto;
+        font-size: 22px;
+        padding: 10px;
+        text-align: center;
+        /* font-family: 'Exo 2', sans-serif; */
+        text-decoration: none;
+        text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 3px;
+
+    /* font-family: 'Acme', sans-serif; */
+
+    }
+    .panel-switch {
+        grid-row-start: 1;
+        /* grid-column-start: 1; */
+    
+    }
+    
+    .active {
+        text-decoration: underline;
+        text-decoration-color: red;
+    }
+
+    .product-box {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid white; */
+        height: 250px;
+        /* padding: 10px; */
+        margin: 10px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .chart {background-image: url(assets/img/graphics.webp);}
+    
+    .product-gpu {background-image: url(assets/img/buynow.png);}
+    .product-pre {background-image: url(assets/img/preorder.png);}
+
+    .product-box h3,
+    .product-box p {
+        margin: auto;
+    }
+    .product-box h3 {font-size: 80%;}
+    .product-box p {font-size: 34px;}
+
+}
 /* DESKTOP | LAPTOP SCREEN WIDTH : over 860px END*/
 /* DESKTOP | LAPTOP SCREEN WIDTH : over 860px END*/
 
@@ -388,15 +401,32 @@ img {vertical-align: middle;}
         padding: 0;
         margin: 0;
     }
+    
     .google_elements {
         display: flex;
         flex-direction: column;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .nav a {
+        font-size: 18px;
+        margin: auto;
+        padding: 12px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .panel-lrg {
+        margin: auto;
     }
     .slides {
         margin: 0 auto;
     }
     .slideshow {
-        display:: flex;
+        display: flex;
     }
     /* hidden header-grid elements */
     .header-hidden {display: none;}
@@ -431,7 +461,7 @@ img {vertical-align: middle;}
 /* MOBILE SCREEN WIDTH : under 750px */
 /* MOBILE SCREEN WIDTH : under 750px */
 @media only screen and (max-width: 750px) {
-    .slides {
+    /* .slides {
         margin: 0 auto;
         
     }
@@ -442,7 +472,7 @@ img {vertical-align: middle;}
     .panel-hidden {
         display: none;
     }
-}
+} */
 
 
 /* MOBILE SCREEN WIDTH : under 399px */
@@ -465,10 +495,7 @@ img {vertical-align: middle;}
         width: 200px;
     } */
     
-    .panel-switch {
-        grid-row-start: 1;
-
-    }
+    
     .slideshow {
         
         display: flex;
