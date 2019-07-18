@@ -17,43 +17,78 @@
     
 </head>
 <body>
-    <!-- header | header -->
+<!-- header | header -->
+    <!-- main banner layout | multi-page layout -->
     <header class="header">
-        <!-- site wide background image | gallery revolver procedure -->
-        <div class="slideshow header-panel-lrg">
-            <!-- slideshow elements -->
-            <div class="slide-panels fade">
-                <img src="assets/img/slide00.jpg" class="slides" alt="" style="width:100%">
-            </div>
-    
-            <div class="slide-panels fade">
-                <img src="assets/img/slide01.jpg" class="slides" alt="" srcset="">
-            </div>
-    
-            <div class="slide-panels fade">
-                <img src="assets/img/slide02.jpg" class="slides" alt="" srcset="">
-            </div>
-        </div>
-        <!-- site wide background image | gallery revolver procedure  end -->
-    </header>
-    <!-- header | header end -->
-    
-    <!-- nav | nav -->
-    <nav class="nav">
-        <div class="nav-layout">
-        <!-- a | navlinks -->
-        <a href="index.html" class="navlinks">Homepage</a>
-        <a href="hardware.html" class="navlinks">Hardware</a>
-        <a href="software.html" class="navlinks">Software</a>
-        <a href="gaming.html" class="navlinks">Gaming</a>
-        <!-- a | navlinks end -->
-        </div>
-        <div class="top-logo"></div>
-        
-    </nav>
-    <!-- nav | nav end -->
+        <!-- div | header-grid -->
+        <div class="header-grid">
+            <!-- header elements | grid elements -->
 
-    <!-- section | content -->
+            <!-- large header panel [slideshow] -->
+            <div class="header-panel panel-lrg">
+
+                <div class="slideshow">
+                    <!-- slideshow elements -->
+                    <div class="slide-panels fade">
+                        <img src="assets/img/slide00.jpg" class="slides" alt="amd-product" style="width:100%">
+                    </div>
+                    <div class="slide-panels fade">
+                        <img src="assets/img/slide01.jpg" class="slides" alt="amd-branding" style="width:100%">
+                    </div>
+                    <div class="slide-panels fade">
+                        <img src="assets/img/slide03.png" class="slides" alt="amd-concept" style="width:100%">
+                    </div>
+                    <div class="slide-panels fade">
+                        <img src="assets/img/slide03.png" class="slides" alt="amd-concept" style="width:100%">
+                    </div>
+                    <!-- slideshow elements end -->
+                </div>
+            </div>
+            <!-- large header panel [slideshow] end -->
+
+            <!-- header panel wide [navigation] -->
+            <div class="header-panel panel-wide">
+                <!-- nav | nav -->
+                <nav class="nav">
+                    <div class="nav-layout">
+                        <!-- a | navlinks -->
+                        <a href="index.html" class="navlinks">Homepage</a>
+                        <a href="#hardware" class="navlinks">Hardware</a>
+                        <a href="#software" class="navlinks">Software</a>
+                        <a href="#gaming" class="navlinks">Gaming</a>
+                        <!-- a | navlinks end -->
+                    </div>
+                </nav>
+                <!-- nav | nav end -->
+            </div>
+            <!-- header panel wide [navigation] end -->
+
+            <!-- hidden panel elements -->
+            <div class="header-panel header-hidden"></div>
+            <div class="header-panel header-hidden"></div>
+            <!-- hidden panel elements -->
+
+            <!-- small header panel [branding] -->
+            <div class="header-panel panel-wide">
+                <div class="top-logo"></div>
+            </div>
+            <!-- small header panel [branding] end -->
+
+            <!-- main heading | branding -->
+            <div class="header-panel panel-wide">
+                <h1>AMD</h1>
+                <h2>Advanced Micro Devices &copy;</h2>
+            </div>
+            <!-- main heading | branding -->
+        </div>
+        <!-- div | header-grid end -->
+    </header>
+    <!-- main layout | multipage layout end -->
+<!-- header | header end -->
+
+
+
+<!-- section | content -->
     <section class="content">
         <!-- stylized heading suite -->
         <h2>Ryzen Overview</h2>
@@ -78,7 +113,7 @@
     <!-- section | content end -->
 
     <!-- section | content -->
-    <section class="content">
+    <section class="content" id="hardware">
         <!-- stylized heading suite -->
         <h2>Hardware Requirements</h2>
         <h4>Same Socket, Upgraded Performance</h4> 
@@ -153,10 +188,10 @@
     <!-- banner -->
 
     <!-- section | content -->
-    <section class="content">
+    <section class="content" id="software">
         <!-- stylized heading suite -->
-        <h2>Performance Specifications</h2>
-        <h4>Ryzen Vs Intel</h4>
+        <h2>Software Specifications</h2>
+        <h4>Memory Testing & Benchmarks</h4>
         <!-- stylized heading suite ends -->
 
         <!-- content elements -->
@@ -221,7 +256,7 @@
     <!-- section | content end -->
 
     <!-- section | content -->
-    <section class="content">
+    <section class="content" id="gaming">
         <!-- stylized heading suite -->
         <h2>Gaming Performance</h2>
         <h4>AMD Powerful GPU Range</h4>
@@ -263,8 +298,8 @@
         <!-- google content elements -->
         <div class="google_elements">
             <!-- google | js emulated pie charts -->
-            <div id="piechart"></div>
-            <div id="intelchart"></div>
+            <div id="ryzen-gaming"></div>
+            <div id="ryzen-perform"></div>
             <!-- google | js emulated pie charts end -->
         </div>
         <!-- google content elements end -->
@@ -322,7 +357,7 @@ function drawChart() {
     var options = {'title':'Gaming Performance', 'width': 300, 'height':350,'backgroundColor':'transparent'};
 
     // display the char inside the <div> element with id | piechart |
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    var chart = new google.visualization.PieChart(document.getElementById('ryzen-gaming'));
     chart.draw(data, options);
 }
     </script>
@@ -337,14 +372,14 @@ function drawChart() {
     var data = google.visualization.arrayToDataTable([
         ['Task', 'percentage guide'],
         ['Intel', 7],
-        ['AMD', 8]
+        ['AMD', 18]
     ]);
 
     // optional ; add a title and set the width | height of the chart
     var options = {'title':'Render Performance', 'width': 300, 'height':350, 'backgroundColor':'transparent', 'textColor': '#fff'};
 
     // display the char inside the <div> element with id | intelchart |
-    var chart = new google.visualization.PieChart(document.getElementById('intelchart'));
+    var chart = new google.visualization.PieChart(document.getElementById('ryzen-perform'));
     chart.draw(data, options);
 }
     </script>
