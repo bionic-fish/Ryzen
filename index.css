@@ -64,12 +64,14 @@ img {vertical-align: middle;}
     margin: auto;
     grid-column: span 4;
 }
-.panel-hidden {
+.panel-none {
     display: none;
 }
-.panel-none {
+.panel-hidden {
     visibility: hidden;
 }
+
+
 /* slideshow elements */
     .slideshow {
         /* display: flex; */
@@ -109,7 +111,14 @@ img {vertical-align: middle;}
     /* slideshow elements end */
 
    
-
+.button {
+    margin: auto;
+    height: 100px;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
     /* header | header end */
     
 /* Banner Elements */
@@ -241,6 +250,7 @@ img {vertical-align: middle;}
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     margin: 10px auto;
 }
 /* JS | Google Elements */
@@ -459,16 +469,6 @@ img {vertical-align: middle;}
         font-family: 'Teko', sans-serif;
         text-align: center;
     }
-    /* .nav a {
-        font-size: 18px;
-        flex-direction: column;
-        margin: auto;
-        padding: 12px;
-        text-decoration: none;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        text-align: center;
-    } */
     .panel-lrg {
         margin: auto;
     }

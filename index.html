@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Document</title>
+    <title>Ryzen Emulation</title>
     <!-- css libs -->
     <link rel="stylesheet" href="index.css">
 
     <!-- google libs -->
     <link href="https://fonts.googleapis.com/css?family=Acme|Exo+2|Teko&display=swap" rel="stylesheet">
 
+    <!-- js animate cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/4dff4a55ad.js"></script>
 
-    <!-- scroll reveal libs -->
+    <!-- scroll reveal script -->
     <script src="https://unpkg.com/scrollreveal"></script>
     
 </head>
@@ -28,7 +31,7 @@
             <!-- header elements | grid elements -->
             
             <!-- small header panel [branding] -->
-            <div class="header-panel panel-wide">
+            <div class="header-panel panel-wide animated bounceIn">
                 <!-- ryzen branding logo -->
                 <div class="top-logo"></div>
                 <!-- ryzen branding logo -->
@@ -36,7 +39,7 @@
             <!-- small header panel [branding] end -->
 
             <!-- large header panel [slideshow] -->
-            <div class="header-panel panel-lrg panel-switch">
+            <div class="header-panel panel-lrg">
 
                 <div class="slideshow">
                     <!-- slideshow elements -->
@@ -44,7 +47,7 @@
                         <img src="assets/img/slide00.jpg" class="slides" alt="amd-product" style="width:100%">
                     </div>
                     <div class="slide-panels fade">
-                        <img src="assets/img/slide01.jpg" class="slides" alt="amd-branding" style="width:100%">
+                        <img src="assets/img/slide01.png" class="slides" alt="amd-branding" style="width:100%">
                     </div>
                     <div class="slide-panels fade">
                         <img src="assets/img/slide02.png" class="slides" alt="amd-concept" style="width:100%">
@@ -62,19 +65,19 @@
                 <!-- nav | nav -->
                 <nav class="nav">
                     <!-- a | navlinks -->
-                    <a href="index.html" class="navlinks">
+                    <a href="index.html" class="animated fadeInRightBig delay-1s">
                         <i class="fas fa-home"></i>
                         Homepage
                     </a>
-                    <a href="#hardware" class="navlinks">
+                    <a href="#hardware" class="animated fadeInLeftBig delay-2s">
                         <i class="fas fa-laptop-code"></i>
                         Hardware
                     </a>
-                    <a href="#software" class="navlinks">
+                    <a href="#software" class="animated fadeInRightBig delay-2s">
                         <i class="fas fa-hdd"></i>
                         Software
                     </a>
-                    <a href="#gaming" class="navlinks">
+                    <a href="#gaming" class="animated fadeInLeftBig delay-1s">
                         <i class="fas fa-headset"></i>
                         Gaming
                     </a>
@@ -85,31 +88,18 @@
             </div>
             <!-- header panel wide [navigation] end -->
 
-            <!-- main heading | branding -->
+           <!-- hidden panel elements -->
+            
+            <div class="header-panel header-hidden"></div>
             <div class="header-panel header-hidden panel-med">
-                    <div class="company-logo"></div>
-                </div>
-                <!-- main heading | branding -->
-
-            
-
-            <!-- hidden panel elements -->
-            <div class="header-panel header-hidden"></div>
-
-            <div class="header-panel panel-med header-hidden">
-                <!-- subscription button -->
-                <div class="header-banner"></div>
-                <button class="subscribe">
-                    <h3>Subscribe</h3>
-                    <!-- attach js application for pop up delivery to user -->
+                <!-- Buy Now | Shop | Register Button -->
+                <button class="button">
+                    Shop Now
                 </button>
-                <!-- subscription button end -->
+                <!-- Buy Now | Shop | Register Button -->
             </div>
-            
             <div class="header-panel header-hidden"></div>
-    
-                
-                <!-- hidden panel elements -->
+            <!-- hidden panel elements -->
 
             
         </div>
@@ -327,16 +317,23 @@
         </div>
         <!-- info_grid end -->
         <hr>
-        <div class="diagrams"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quisquam, necessitatibus,
+        fugit a totam consectetur, expedita in sequi deserunt praesentium aspernatur dolore! Adipisci,
+        possimus asperiores!</p>
+
         <!-- google content elements -->
         <div class="google_elements">
             <!-- google | js emulated pie charts -->
-            <div id="ryzen-gaming"></div>
-            <div id="ryzen-perform"></div>
+            <!-- <div id="ryzen-gaming"></div>
+            <div id="ryzen-perform"></div> -->
             <!-- google | js emulated pie charts end -->
         </div>
         <!-- google content elements end -->
-
+        
+        <!-- company statistics | data information -->
+        <div class="diagrams"></div>
+        <!-- company statistics | data information end -->
+        
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quisquam, necessitatibus,
         fugit a totam consectetur, expedita in sequi deserunt praesentium aspernatur dolore! Adipisci,
         possimus asperiores!</p>
