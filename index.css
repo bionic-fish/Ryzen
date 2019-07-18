@@ -197,7 +197,7 @@ img {vertical-align: middle;}
 }
 
 
-.chart,
+.graphics,
 .company,
 .product,
 .hardware,
@@ -213,7 +213,7 @@ img {vertical-align: middle;}
     margin: 12% auto;
 
 }
-
+.graphics {background-image: url(assets/img/graphics.webp);}
 .product {background-image: url(assets/img/product.png);}
 .hardware {background-image: url(assets/img/hardware.png);}
 .history {background-image: url(assets/img/history.jpg);}
@@ -359,7 +359,7 @@ img {vertical-align: middle;}
         background-size: cover;
     }
 
-    .chart {background-image: url(assets/img/graphics.webp);}
+    /* .content-graphics {background-image: url(assets/img/graphics.webp);} */
     
     .product-gpu {background-image: url(assets/img/buynow.png);}
     .product-pre {background-image: url(assets/img/preorder.png);}
@@ -546,21 +546,18 @@ img {vertical-align: middle;}
 
     /* benchmark | product images [transparent] */
     .branding,
-    .chart,
+    .graphics,
     .hardware,
     .history,
     .product,
     .overview {
         height: 150px;
         width: 150px;
-        margin: auto;
+        /* margin: auto; */
         background-position: center;
     }
     .info_grid {
         display: flex;
         flex-direction: column;
     }
-    
-
-
 }
